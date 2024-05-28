@@ -1,0 +1,29 @@
+@import "../../style/_mixins.scss";
+
+.investor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+  gap: 15px 0px;
+  background: rgba(229, 231, 236);
+
+  @include mobile {
+    padding: 20px;
+  }
+
+  &-title {
+    width: 60%;
+
+    @include mobile {
+      width: 100%;
+      font-size: 20px;
+    }
+  }
+
+  &-author {
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(63, 71, 82);
+  }
+}

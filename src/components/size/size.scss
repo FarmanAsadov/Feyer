@@ -1,0 +1,16 @@
+@import "../../style/_mixins.scss";
+
+.size {
+  &-select {
+    width: 50%;
+    padding: 10px 16px;
+    background-color: #fff;
+    border: 0.5px solid #dadce0;
+    outline: none;
+    font-size: 16px;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
